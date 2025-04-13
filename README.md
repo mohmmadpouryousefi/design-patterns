@@ -25,7 +25,6 @@ Decorator Pattern<br/>
 Command Pattern<br/>
 Proxy Pattern<br/>
 Adapter Pattern<br/>
-Template Method Pattern<br/>
 and more...<br/>
 Each design pattern comes with detailed explanations, code examples to help you understand the pattern's purpose, structure, and usage.<br/>
 <br/>
