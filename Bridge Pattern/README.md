@@ -1,3 +1,5 @@
+# Bridge Pattern
+
 The Bridge Pattern is a structural design pattern that decouples an abstraction from its implementation, allowing them to vary independently. It involves creating separate interface hierarchies for abstraction and implementation, and then connecting them through a bridge.
 
 In this pattern, the abstraction represents the high-level logic, and the implementation represents the low-level details. By using a bridge, you can switch different implementations without affecting the abstraction, and vice versa.
