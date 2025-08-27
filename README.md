@@ -3,9 +3,10 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-yellow.svg)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0+-blue.svg)](https://www.typescriptlang.org/)
-[![Patterns](https://img.shields.io/badge/Patterns-11%20Implemented-green.svg)](#implemented-patterns)
 
 > A comprehensive collection of **Gang of Four (GoF) Design Patterns** implemented in modern JavaScript (ES6+) and TypeScript with practical examples, detailed explanations, and best practices.
+
+---
 
 ## 📖 About
 
@@ -15,7 +16,6 @@ Design patterns are proven solutions to recurring problems in software design an
 
 ### 🔨 Creational Patterns
 *Deal with object creation mechanisms, trying to create objects in a manner suitable to the situation.*
-
 - **[Abstract Factory Pattern](./Abstract%20Factory%20Pattern/)** - Creates families of related objects
 - **[Builder Pattern](./Builder%20Pattern/)** - Constructs complex objects step by step
 - **[Factory Pattern](./Factory%20Pattern/)** - Creates objects without specifying exact classes
@@ -23,7 +23,6 @@ Design patterns are proven solutions to recurring problems in software design an
 
 ### 🔗 Structural Patterns
 *Deal with object composition and relationships between objects.*
-
 - **[Adapter Pattern](./Adapter%20Pattern/)** - Allows incompatible interfaces to work together
 - **[Bridge Pattern](./Bridge%20Pattern/)** - Separates abstraction from implementation
 - **[Composite Pattern](./Composite%20Pattern/)** - Composes objects into tree structures
@@ -32,211 +31,123 @@ Design patterns are proven solutions to recurring problems in software design an
 
 ### ⚡ Behavioral Patterns
 *Focus on communication between objects and the assignment of responsibilities.*
-
 - **[Chain of Responsibility Pattern](./Chain%20of%20Responsibility%20Pattern/)** - Passes requests along handler chain
 - **[Command Pattern](./Command%20Pattern/)** - Encapsulates requests as objects
 
 ## 🚀 Quick Start
 
 ### Prerequisites
-- **Node.js** (v14 or higher)
-- **TypeScript** (for TS examples)
+- **Node.js** (v18 or higher recommended)
 - **Git**
 
-### Installation
+### Installation & Running Examples
 
 ```bash
 # Clone the repository
 git clone https://github.com/mohmmadpouryousefi/design-patterns.git
-
-# Navigate to project directory
 cd design-patterns
 
-# Install dependencies (if needed)
-npm install -g typescript  # For TypeScript compilation
-# 🎯 Design Patterns — JavaScript & TypeScript
-
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-yellow.svg)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.0+-blue.svg)](https://www.typescriptlang.org/)
-
-Practical, well-documented implementations of common design patterns in both JavaScript (ES6+) and TypeScript. Each pattern lives in its own folder with runnable examples and a short README describing the intent, motivation, and usage.
-
-## What's changed (latest)
-- Added runnable test harnesses: `scripts/test-js.js` and `scripts/test-ts.js` to automatically execute examples.
-- Added `package.json` (devDependency: TypeScript) and `tsconfig.json` (module: commonjs) to produce deterministic CommonJS outputs for running examples in Node.
-- CI workflow updated to install dependencies safely and run both harnesses on push/PR.
-
-## Quick start
-
-Prerequisites
-- Node.js 18+ (recommended)
-- Git
-
-Clone and run all examples locally
-
-```powershell
-# clone
-git clone https://github.com/mohmmadpouryousefi/design-patterns.git
-cd design-patterns
-
-# install local dev deps (creates package-lock.json)
+# Install dependencies (creates package-lock.json)
 npm install
 
-# run JS examples across the repo
+# Run all JS examples
 npm run test-js
 
-# run TS examples across the repo (compiles each ts/index.ts to CommonJS then executes)
+# Run all TS examples (compiles each ts/index.ts to CommonJS then executes)
 npm run test-ts
 
-# 🎯 Design Patterns in JavaScript and TypeScript
-
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
-[![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-yellow.svg)](https://developer.mozilla.org/en-US/docs/Web/JavaScript) 
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.0+-blue.svg)](https://www.typescriptlang.org/)
-
-Practical, well-documented implementations of common design patterns in both JavaScript (ES6+) and TypeScript. Each pattern lives in its own folder with runnable examples and a short README describing intent, motivation, and usage.
-
-## What's changed (latest)
-
-- Added runnable test harnesses: `scripts/test-js.js` and `scripts/test-ts.js` to automatically execute examples.
-- Added `package.json` (devDependency: TypeScript) and `tsconfig.json` (module: commonjs) to produce deterministic CommonJS outputs for running examples in Node.
-- CI workflow updated to install dependencies safely and run both harnesses on push/PR.
-
-## Quick start
-
-Prerequisites
-- Node.js 18+ (recommended)
-- Git
-
-Clone and run all examples locally
-
-```powershell
-# clone
-git clone https://github.com/mohmmadpouryousefi/design-patterns.git
-cd design-patterns
-
-# install local dev deps (creates package-lock.json)
-npm install
-
-# run JS examples across the repo
-npm run test-js
-
-# run TS examples across the repo (compiles each ts/index.ts to CommonJS then executes)
-npm run test-ts
-
-# 🎯 Design Patterns in JavaScript and TypeScript
-
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-yellow.svg)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.0+-blue.svg)](https://www.typescriptlang.org/)
-
-Practical, well-documented implementations of common design patterns in both JavaScript (ES6+) and TypeScript. Each pattern lives in its own folder with runnable examples and a short README describing intent, motivation, and usage.
-
-## What's changed (latest)
-
-- Added runnable test harnesses: `scripts/test-js.js` and `scripts/test-ts.js` to automatically execute examples.
-- Added `package.json` (devDependency: TypeScript) and `tsconfig.json` (module: commonjs) to produce deterministic CommonJS outputs for running examples in Node.
-- CI workflow updated to install dependencies safely and run both harnesses on push/PR.
-
-## Quick start
-
-Prerequisites
-- Node.js 18+ (recommended)
-- Git
-
-Clone and run all examples locally
-
-```powershell
-# clone
-git clone https://github.com/mohmmadpouryousefi/design-patterns.git
-cd design-patterns
-
-# install local dev deps (creates package-lock.json)
-npm install
-
-# run JS examples across the repo
-npm run test-js
-
-# run TS examples across the repo (compiles each ts/index.ts to CommonJS then executes)
-npm run test-ts
-
-# run both
+# Run both
 npm test
 ```
 
-Notes
-- CI will run `npm ci` when a lockfile exists; otherwise it falls back to `npm install`.
-- `tsconfig.json` is configured with `module: commonjs` so compiled TS runs in Node without ESM issues in the harness.
+> **Note:**
+> - CI will run `npm ci` when a lockfile exists; otherwise it falls back to `npm install`.
+> - `tsconfig.json` is configured with `module: commonjs` so compiled TS runs in Node without ESM issues in the harness.
 
-## Project layout
-
-Each pattern follows the same structure for consistency and discoverability:
+## 📁 Repository Structure
 
 ```
-<Pattern Name>/
-	├─ README.md        # short explanation and examples
-	├─ js/
-	│   ├─ index.js     # runnable JS example
-	│   └─ README.md
-	└─ ts/
-			├─ index.ts     # runnable TS example (compiled to CommonJS for tests)
-			└─ README.md
+design-patterns/
+├── README.md
+├── <Pattern Name>/
+│   ├── README.md
+│   ├── js/
+│   │   ├── index.js
+│   │   └── README.md
+│   └── ts/
+│       ├── index.ts
+│       └── README.md
+├── scripts/
+│   ├── test-js.js
+│   └── test-ts.js
+├── package.json
+├── tsconfig.json
+└── ...
 ```
 
-Top-level helper scripts
-- `scripts/test-js.js` — discovers and runs all `js/index.js` examples
-- `scripts/test-ts.js` — compiles each `ts/index.ts` to CommonJS and runs the output
+## 💡 Key Features
 
-## Implemented patterns
+- ✅ **13+ Design Patterns** implemented and tested
+- 🔄 **Dual Language Support** - JavaScript ES6+ and TypeScript
+- 📚 **Comprehensive Documentation** - Each pattern includes detailed explanations
+- 🎯 **Practical Examples** - Real-world use cases and implementations
+- 🧪 **Tested Code** - All examples are executable and verified
+- 🏗️ **Consistent Structure** - Uniform organization across all patterns
+- 📝 **Step-by-step Guides** - Clear implementation steps for learning
 
-The repository contains a growing set of patterns (JS + TS). Current examples include:
+## 📋 Implemented Patterns
 
-- Abstract Factory
-- Adapter
-- Bridge
-- Builder
-- Chain of Responsibility
-- Command
-- Composite
-- Decorator
-- Facade
-- Factory
-- Singleton
-- Prototype
-- Flyweight
+| Pattern | Category | JavaScript | TypeScript | Description |
+|---------|----------|:----------:|:----------:|-------------|
+| [Abstract Factory](./Abstract%20Factory%20Pattern/) | Creational | ✅ | ✅ | Creates families of related objects |
+| [Adapter](./Adapter%20Pattern/) | Structural | ✅ | ✅ | Interface compatibility adapter |
+| [Bridge](./Bridge%20Pattern/) | Structural | ✅ | ✅ | Separates abstraction from implementation |
+| [Builder](./Builder%20Pattern/) | Structural | ✅ | ✅ | Step-by-step object construction |
+| [Chain of Responsibility](./Chain%20of%20Responsibility%20Pattern/) | Behavioral | ✅ | ✅ | Handler chain for requests |
+| [Command](./Command%20Pattern/) | Behavioral | ✅ | ✅ | Encapsulates requests as objects |
+| [Composite](./Composite%20Pattern/) | Structural | ✅ | ✅ | Tree structure composition |
+| [Decorator](./Decorator%20Pattern/) | Structural | ✅ | ✅ | Dynamic behavior addition |
+| [Facade](./Facade%20Pattern/) | Structural | ✅ | ✅ | Simplified complex subsystem interface |
+| [Factory](./Factory%20Pattern/) | Creational | ✅ | ✅ | Object creation without specifying classes |
+| [Singleton](./Singleton%20Pattern/) | Creational | ✅ | ✅ | Single instance management |
+| [Prototype](./Prototype%20Pattern/) | Creational | ✅ | ✅ | Cloning and registry |
+| [Flyweight](./Flyweight%20Pattern/) | Structural | ✅ | ✅ | Shared state for many objects |
 
-Each pattern folder contains a README with a small explanation and usage notes.
+## 🤝 Contributing
 
-## Contributing
+Contributions are welcome! Here's how you can help:
+1. **Fork the repository**
+2. **Create a feature branch** (`git checkout -b feature/new-pattern`)
+3. **Implement the pattern** following our structure
+4. **Add comprehensive documentation**
+5. **Test both JS and TS implementations**
+6. **Submit a pull request**
 
-We welcome contributions and new pattern implementations. Please follow these guidelines:
+### Contribution Guidelines
+- Follow the existing folder structure
+- Include both JavaScript and TypeScript examples
+- Add comprehensive README documentation
+- Ensure code is executable and tested
+- Use meaningful commit messages
+- Include step-by-step implementation guides
 
-1. Fork the repo and create a feature branch: `git checkout -b feat/<pattern-name>`
-2. Add both `js` and `ts` implementations and a clear `README.md` for the pattern
-3. Ensure examples are runnable and update `scripts` if necessary
-4. Run the test harnesses locally: `npm run test-js` and `npm run test-ts`
-5. Open a pull request with an explanation and short demo
+## 📚 Resources
 
-## CI
+- [Design Patterns: Elements of Reusable Object-Oriented Software](https://en.wikipedia.org/wiki/Design_Patterns)
+- [Refactoring Guru - Design Patterns](https://refactoring.guru/design-patterns)
+- [MDN JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide)
+- [TypeScript Handbook](https://www.typescriptlang.org/docs/)
 
-Continuous integration runs on push and pull-request to `main`. The workflow will:
+## 📄 License
 
-1. Checkout the repository
-2. Setup Node.js (matrix: Node 18.x, 20.x)
-3. Install dependencies (`npm ci` if lockfile exists; otherwise `npm install`)
-4. Run `scripts/test-js.js` and `scripts/test-ts.js`
+This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
 
-If you'd like deterministic CI installs, run `npm install` locally and commit the generated `package-lock.json`.
+## 🙏 Acknowledgments
 
-## License
-
-This project is licensed under the MIT License — see the `LICENSE` file.
+- Inspired by the **Gang of Four (GoF)** design patterns book
+- Thanks to the JavaScript and TypeScript communities
+- Built with ❤️ for developers learning design patterns
 
 ---
 
-If you want, I can also:
-- Commit a `package-lock.json` (by running `npm install`) and push it so CI uses `npm ci`.
-- Restore explicit TS exports in examples now that CommonJS compilation is configured.
-
-Enjoy learning — star the repo if you find it useful! 🎯
+⭐ **Star this repository** if you find it helpful for learning design patterns!
