@@ -89,6 +89,42 @@ npm run test-js
 # run TS examples across the repo (compiles each ts/index.ts to CommonJS then executes)
 npm run test-ts
 
+# 🎯 Design Patterns in JavaScript and TypeScript
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
+[![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-yellow.svg)](https://developer.mozilla.org/en-US/docs/Web/JavaScript) 
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.0+-blue.svg)](https://www.typescriptlang.org/)
+
+Practical, well-documented implementations of common design patterns in both JavaScript (ES6+) and TypeScript. Each pattern lives in its own folder with runnable examples and a short README describing intent, motivation, and usage.
+
+## What's changed (latest)
+
+- Added runnable test harnesses: `scripts/test-js.js` and `scripts/test-ts.js` to automatically execute examples.
+- Added `package.json` (devDependency: TypeScript) and `tsconfig.json` (module: commonjs) to produce deterministic CommonJS outputs for running examples in Node.
+- CI workflow updated to install dependencies safely and run both harnesses on push/PR.
+
+## Quick start
+
+Prerequisites
+- Node.js 18+ (recommended)
+- Git
+
+Clone and run all examples locally
+
+```powershell
+# clone
+git clone https://github.com/mohmmadpouryousefi/design-patterns.git
+cd design-patterns
+
+# install local dev deps (creates package-lock.json)
+npm install
+
+# run JS examples across the repo
+npm run test-js
+
+# run TS examples across the repo (compiles each ts/index.ts to CommonJS then executes)
+npm run test-ts
+
 # run both
 npm test
 ```
