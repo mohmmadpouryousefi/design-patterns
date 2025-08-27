@@ -2,66 +2,73 @@
 
 // Car interface
 class Car {
-    drive() {
-        console.log('Driving the car');
-    }
+  drive() {
+    console.log("Driving the car");
+  }
 }
 
 // ElectricCar class implementing the Car interface
 class ElectricCar extends Car {
-    charge() {
-        console.log('Charging the electric car');
-    }
+  charge() {
+    console.log("Charging the electric car");
+  }
 }
 
 // GasolineCar class implementing the Car interface
 class GasolineCar extends Car {
-    refuel() {
-        console.log('Refueling the gasoline car');
-    }
+  refuel() {
+    console.log("Refueling the gasoline car");
+  }
 }
 
 // Step 2
 
 // CarFactory interface
 class CarFactory {
-    createElectricCar() {
-        throw new Error('createElectricCar() method must be implemented');
-    }
+  createElectricCar() {
+    throw new Error("createElectricCar() method must be implemented");
+  }
 
-    createGasolineCar() {
-        throw new Error('createGasolineCar() method must be implemented');
-    }
+  createGasolineCar() {
+    throw new Error("createGasolineCar() method must be implemented");
+  }
 }
 
 // Step 3
 
 // Concrete Factory for creating Tesla ElectricCars
 class TeslaCarFactory extends CarFactory {
-    createElectricCar() {
-        return new ElectricCar();
-    }
+  createElectricCar() {
+    return new ElectricCar();
+  }
+  // Implement createGasolineCar to satisfy client code in examples
+  createGasolineCar() {
+    return new GasolineCar();
+  }
 }
 
 // Concrete Factory for creating Toyota GasolineCars
 class ToyotaCarFactory extends CarFactory {
-    createGasolineCar() {
-        return new GasolineCar();
-    }
+  createGasolineCar() {
+    return new GasolineCar();
+  }
+  // Implement createElectricCar so Toyota factory can also produce electric cars in this example
+  createElectricCar() {
+    return new ElectricCar();
+  }
 }
-
 
 // Step 4
 
 function clientCode(factory) {
-    const electricCar = factory.createElectricCar();
-    const gasolineCar = factory.createGasolineCar();
+  const electricCar = factory.createElectricCar();
+  const gasolineCar = factory.createGasolineCar();
 
-    electricCar.drive();
-    electricCar.charge();
+  electricCar.drive();
+  electricCar.charge();
 
-    gasolineCar.drive();
-    gasolineCar.refuel();
+  gasolineCar.drive();
+  gasolineCar.refuel();
 }
 
 // Client code using TeslaCarFactory
@@ -78,8 +85,8 @@ clientCode(teslaFactory);
 const toyotaFactory = new ToyotaCarFactory();
 clientCode(toyotaFactory);
 
-  // Output:
-  // Driving the car
-  // Charging the electric car
-  // Driving the car
-  // Refueling the gasoline car
+// Output:
+// Driving the car
+// Charging the electric car
+// Driving the car
+// Refueling the gasoline car

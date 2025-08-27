@@ -1,97 +1,99 @@
 // Step 1
 
-// Car interface
+// Base Car interface
 interface Car {
-    drive(): void;
+  drive(): void;
 }
 
-// ElectricCar class implementing the Car interface
-class ElectricCar implements Car {
-    drive() {
-        console.log('Driving the car');
-    }
-
-    charge() {
-        console.log('Charging the electric car');
-    }
+// Specific interfaces for concrete behaviors
+interface ElectricCar extends Car {
+  charge(): void;
 }
 
-// GasolineCar class implementing the Car interface
-class GasolineCar implements Car {
-    drive() {
-        console.log('Driving the car');
-    }
+interface GasolineCar extends Car {
+  refuel(): void;
+}
 
-    refuel() {
-        console.log('Refueling the gasoline car');
-    }
+// Concrete implementations
+class ConcreteElectricCar implements ElectricCar {
+  drive() {
+    console.log("Driving the car");
+  }
+
+  charge() {
+    console.log("Charging the electric car");
+  }
+}
+
+class ConcreteGasolineCar implements GasolineCar {
+  drive() {
+    console.log("Driving the car");
+  }
+
+  refuel() {
+    console.log("Refueling the gasoline car");
+  }
 }
 
 // Step 2
 
 // CarFactory interface
 interface CarFactory {
-    createElectricCar(): Car;
-    createGasolineCar(): Car;
+  createElectricCar(): ElectricCar;
+  createGasolineCar(): GasolineCar;
 }
 
 // Step 3
 
 // Concrete Factory for creating Tesla ElectricCars
 class TeslaCarFactory implements CarFactory {
-    createElectricCar() {
-        return new ElectricCar();
-    }
+  createElectricCar(): ElectricCar {
+    return new ConcreteElectricCar();
+  }
 
-    createGasolineCar() {
-        throw new Error('TeslaCarFactory cannot create gasoline cars');
-    }
+  // Demo: also return a gasoline car instance (family example)
+  createGasolineCar(): GasolineCar {
+    return new ConcreteGasolineCar();
+  }
 }
 
-// Concrete Factory for creating Toyota GasolineCars
+// Concrete Factory for creating Toyota cars
 class ToyotaCarFactory implements CarFactory {
-    createElectricCar() {
-        throw new Error('ToyotaCarFactory cannot create electric cars');
-    }
+  createElectricCar(): ElectricCar {
+    return new ConcreteElectricCar();
+  }
 
-    createGasolineCar() {
-        return new GasolineCar();
-    }
+  createGasolineCar(): GasolineCar {
+    return new ConcreteGasolineCar();
+  }
 }
 
 // Step 4
 
+// Type guards to allow calling concrete methods
+function isElectricCar(car: Car): car is ElectricCar {
+  return (car as ElectricCar).charge !== undefined;
+}
+
+function isGasolineCar(car: Car): car is GasolineCar {
+  return (car as GasolineCar).refuel !== undefined;
+}
+
 function clientCode(factory: CarFactory) {
-    const electricCar = factory.createElectricCar();
-    const gasolineCar = factory.createGasolineCar();
+  const electricCar = factory.createElectricCar();
+  const gasolineCar = factory.createGasolineCar();
 
-    electricCar.drive();
-    if ('charge' in electricCar) {
-        electricCar.charge();
-    }
+  electricCar.drive();
+  electricCar.charge();
 
-    gasolineCar.drive();
-    if ('refuel' in gasolineCar) {
-        gasolineCar.refuel();
-    }
+  gasolineCar.drive();
+  gasolineCar.refuel();
 }
 
 // Client code using TeslaCarFactory
 const teslaFactory = new TeslaCarFactory();
 clientCode(teslaFactory);
 
-// Output:
-// Driving the car
-// Charging the electric car
-// Driving the car
-// Error: TeslaCarFactory cannot create gasoline cars
-
 // Client code using ToyotaCarFactory
 const toyotaFactory = new ToyotaCarFactory();
 clientCode(toyotaFactory);
-
-// Output:
-// Driving the car
-// Error: ToyotaCarFactory cannot create electric cars
-// Driving the car
-// Refueling the gasoline car

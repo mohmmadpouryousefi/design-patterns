@@ -9,7 +9,9 @@ class ParticleType {
 
   render(x, y, vx, vy) {
     // extrinsic state (position/velocity) is passed in
-    console.log(`Render particle [color=${this.color}, texture=${this.texture}] at (${x},${y}) with v=(${vx},${vy})`);
+    console.log(
+      `Render particle [color=${this.color}, texture=${this.texture}] at (${x},${y}) with v=(${vx},${vy})`
+    );
   }
 }
 
@@ -54,10 +56,10 @@ class ParticleSystem {
 const system = new ParticleSystem();
 
 // Create many particles but reuse intrinsic data
-system.createParticle('red', 'smoke', 10, 20, 1, 0);
-system.createParticle('red', 'smoke', 12, 25, 0.5, -0.2);
-system.createParticle('blue', 'spark', 50, 60, -1, 0.3);
-system.createParticle('red', 'smoke', 15, 30, 0, 1);
+system.createParticle("red", "smoke", 10, 20, 1, 0);
+system.createParticle("red", "smoke", 12, 25, 0.5, -0.2);
+system.createParticle("blue", "spark", 50, 60, -1, 0.3);
+system.createParticle("red", "smoke", 15, 30, 0, 1);
 
 system.render();
 
