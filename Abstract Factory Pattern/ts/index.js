@@ -2,18 +2,18 @@
 // Concrete implementations
 class ConcreteElectricCar {
     drive() {
-        console.log('Driving the car');
+        console.log("Driving the car");
     }
     charge() {
-        console.log('Charging the electric car');
+        console.log("Charging the electric car");
     }
 }
 class ConcreteGasolineCar {
     drive() {
-        console.log('Driving the car');
+        console.log("Driving the car");
     }
     refuel() {
-        console.log('Refueling the gasoline car');
+        console.log("Refueling the gasoline car");
     }
 }
 // Step 3

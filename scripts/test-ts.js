@@ -18,7 +18,8 @@ for (const e of entries) {
     total++;
     console.log(`\n--- Running TS example for: ${e.name}`);
     try {
-      execSync(`tsc "${tsPath}" --target es2020`, {
+      // compile with CommonJS module output to match Node execution environment
+      execSync(`tsc "${tsPath}" --target es2020 --module commonjs`, {
         stdio: "pipe",
         timeout: 10000,
       });

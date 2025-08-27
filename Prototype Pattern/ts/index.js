@@ -45,4 +45,4 @@ user1.state.profile.location = 'Tehran';
 console.log('userPrototype.state:', userPrototype.state);
 console.log('user1.state:', user1.state);
 console.log('user2.state:', user2.state);
-export { Prototype, PrototypeRegistry };
+// no exports - file intended to be run as a script in tests

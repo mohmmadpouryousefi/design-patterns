@@ -46,4 +46,4 @@ system.createParticle('red', 'smoke', 12, 25, 0.5, -0.2);
 system.createParticle('blue', 'spark', 50, 60, -1, 0.3);
 system.createParticle('red', 'smoke', 15, 30, 0, 1);
 system.render();
-export { ParticleSystem, ParticleFactory, ParticleType };
+// no exports - file intended to be run as a script in tests

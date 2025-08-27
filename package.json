@@ -1,0 +1,17 @@
+{
+  "name": "design-patterns",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Collection of design pattern examples in JS and TS",
+  "scripts": {
+    "test-js": "node scripts/test-js.js",
+    "test-ts": "node scripts/test-ts.js",
+    "test": "npm run test-js && npm run test-ts"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.2"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
