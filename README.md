@@ -40,37 +40,7 @@ _Focus on communication between objects and the assignment of responsibilities._
 - **[Chain of Responsibility Pattern](./Chain%20of%20Responsibility%20Pattern/)** - Passes requests along handler chain
 - **[Command Pattern](./Command%20Pattern/)** - Encapsulates requests as objects
 
-## 🚀 Quick Start
 
-### Prerequisites
-
-- **Node.js** (v18 or higher recommended)
-- **Git**
-
-### Installation & Running Examples
-
-```bash
-# Clone the repository
-git clone https://github.com/mohmmadpouryousefi/design-patterns.git
-cd design-patterns
-
-# Install dependencies (creates package-lock.json)
-npm install
-
-# Run all JS examples
-npm run test-js
-
-# Run all TS examples (compiles each ts/index.ts to CommonJS then executes)
-npm run test-ts
-
-# Run both
-npm test
-```
-
-> **Note:**
->
-> - CI will run `npm ci` when a lockfile exists; otherwise it falls back to `npm install`.
-> - `tsconfig.json` is configured with `module: commonjs` so compiled TS runs in Node without ESM issues in the harness.
 
 ## 📁 Repository Structure
 
