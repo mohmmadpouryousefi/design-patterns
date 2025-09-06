@@ -39,6 +39,7 @@ _Focus on communication between objects and the assignment of responsibilities._
 
 - **[Chain of Responsibility Pattern](./Chain%20of%20Responsibility%20Pattern/)** - Passes requests along handler chain
 - **[Command Pattern](./Command%20Pattern/)** - Encapsulates requests as objects
+- **[Mediator Pattern](./Mediator%20Pattern/)** - Defines communication between objects
 
 
 
@@ -65,7 +66,7 @@ design-patterns/
 
 ## 💡 Key Features
 
-- ✅ **13+ Design Patterns** implemented and tested
+- ✅ **14+ Design Patterns** implemented and tested
 - 🔄 **Dual Language Support** - JavaScript ES6+ and TypeScript
 - 📚 **Comprehensive Documentation** - Each pattern includes detailed explanations
 - 🎯 **Practical Examples** - Real-world use cases and implementations
@@ -83,6 +84,7 @@ design-patterns/
 | [Builder](./Builder%20Pattern/)                                     | Structural |     ✅     |     ✅     | Step-by-step object construction           |
 | [Chain of Responsibility](./Chain%20of%20Responsibility%20Pattern/) | Behavioral |     ✅     |     ✅     | Handler chain for requests                 |
 | [Command](./Command%20Pattern/)                                     | Behavioral |     ✅     |     ✅     | Encapsulates requests as objects           |
+| [Mediator](./Mediator%20Pattern/)                                   | Behavioral |     ✅     |     ✅     | Defines communication between objects      |
 | [Composite](./Composite%20Pattern/)                                 | Structural |     ✅     |     ✅     | Tree structure composition                 |
 | [Decorator](./Decorator%20Pattern/)                                 | Structural |     ✅     |     ✅     | Dynamic behavior addition                  |
 | [Facade](./Facade%20Pattern/)                                       | Structural |     ✅     |     ✅     | Simplified complex subsystem interface     |
