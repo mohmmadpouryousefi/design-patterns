@@ -129,7 +129,6 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 - Inspired by the **Gang of Four (GoF)** design patterns book
 - Thanks to the JavaScript and TypeScript communities
 - Built with ❤️ for developers learning design patterns
-
 ---
 
 ⭐ **Star this repository** if you find it helpful for learning design patterns!
