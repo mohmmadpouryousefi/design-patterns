@@ -42,28 +42,6 @@ _Focus on communication between objects and the assignment of responsibilities._
 - **[Mediator Pattern](./Mediator%20Pattern/)** - Defines communication between objects
 
 
-
-## 📁 Repository Structure
-
-```
-design-patterns/
-├── README.md
-├── <Pattern Name>/
-│   ├── README.md
-│   ├── js/
-│   │   ├── index.js
-│   │   └── README.md
-│   └── ts/
-│       ├── index.ts
-│       └── README.md
-├── scripts/
-│   ├── test-js.js
-│   └── test-ts.js
-├── package.json
-├── tsconfig.json
-└── ...
-```
-
 ## 💡 Key Features
 
 - ✅ **14+ Design Patterns** implemented and tested
